@@ -1,0 +1,881 @@
+[
+  {
+    "_id": {
+      "$oid": "664f002cdcac574adb859aba"
+    },
+    "evaluationId": "3a159a9d-1d38-4c76-9a78-d60154865b2f",
+    "user": {
+      "name": "EVREN BEKTAŞ",
+      "email": "riglc.fatih@tp-otc.com"
+    },
+    "date": {
+      "$date": "2024-05-20T07:36:49.993Z"
+    },
+    "overallScore": {
+      "Health and Safety": 21,
+      "Timeliness": 28,
+      "Quality": 34.4,
+      "score": 83.4,
+      "rating": "Grade B"
+    },
+    "formId": "form001",
+    "formName": "Service Performance Evaluation",
+    "grades": [
+      {
+        "grade": "Grade A",
+        "description": "Excellent Performance",
+        "minScore": 85,
+        "maxScore": 100
+      },
+      {
+        "grade": "Grade B",
+        "description": "Acceptable Performance",
+        "minScore": 75,
+        "maxScore": 84
+      },
+      {
+        "grade": "Grade C",
+        "description": "Conditional Acceptable",
+        "minScore": 60,
+        "maxScore": 74
+      },
+      {
+        "grade": "Grade D",
+        "description": "Poor Performance",
+        "minScore": 0,
+        "maxScore": 59
+      }
+    ],
+    "generalInfo": [
+      {
+        "label": "Evaluator Name",
+        "type": "text",
+        "required": true,
+        "dropdownList": [],
+        "value": "EVREN BEKTAŞ"
+      },
+      {
+        "label": "Evaluator Title",
+        "type": "text",
+        "required": true,
+        "dropdownList": [],
+        "value": "DRILLING NIGHT SUPERVISOR"
+      },
+      {
+        "label": "Well Name",
+        "type": "dropdown",
+        "required": true,
+        "dropdownList": [
+          "1",
+          "10 YENI",
+          "11",
+          "AAA",
+          "ABC",
+          "Çaycuma-1",
+          "Gökçebey-1",
+          "Karadeniz Amasra-1",
+          "Karadeniz Amasra-2",
+          "Karadeniz Amasra-3",
+          "Sakarya Karasu-1",
+          "Sakarya Karasu-1/K",
+          "Test Well",
+          "Tuna-1",
+          "Türkali-1",
+          "Türkali-1 Pilot Well",
+          "Türkali-10",
+          "Türkali-11",
+          "Türkali-12",
+          "Türkali-13",
+          "Türkali-14",
+          "Türkali-2",
+          "Türkali-3",
+          "Türkali-4",
+          "Türkali-5",
+          "Türkali-6",
+          "Türkali-7",
+          "Türkali-8",
+          "Türkali-9",
+          "X-1",
+          "X-2",
+          "X-3",
+          "X-4",
+          "X-5",
+          "X-6",
+          "X-7",
+          "X-8"
+        ],
+        "value": "Türkali-13"
+      },
+      {
+        "label": "Well Phase",
+        "type": "dropdown",
+        "required": true,
+        "dropdownList": [
+          "Drilling",
+          "Lower Completion",
+          "Upper Completion",
+          "Well Intervention",
+          "Workover"
+        ],
+        "value": "TEST"
+      },
+      {
+        "label": "Service Company Name",
+        "type": "dropdown",
+        "required": true,
+        "dropdownList": [
+          "ARMELSAN",
+          "BHI",
+          "DEEPTECH",
+          "SLB",
+          "TP-OTC",
+          "GEOLOG"
+        ],
+        "value": "ARMELSAN"
+      },
+      {
+        "label": "Service Company Function",
+        "type": "dropdown",
+        "required": true,
+        "dropdownList": [
+          "ROV",
+          "RIG",
+          "LCO",
+          "VACS",
+          "CATERING",
+          "MLU",
+          "CT",
+          "DST",
+          "GP",
+          "MUZIC",
+          "OSS",
+          "SSLS",
+          "TCP",
+          "WT",
+          "CMT",
+          "DFS",
+          "DNM",
+          "FSH",
+          "H2S",
+          "SC",
+          "TRS",
+          "WBCO",
+          "WL"
+        ],
+        "value": "ROV"
+      },
+      {
+        "label": "Performed Service",
+        "type": "dropdown",
+        "required": true,
+        "dropdownList": [
+          "ROV SERVICES",
+          "RIG MANAGEMENT",
+          "COMPLETIONS",
+          "VACS TOOL",
+          "CATERING SERVICES",
+          "WELL MONITORING",
+          "COILED TUBING",
+          "DRILL STEM TEST",
+          "GRAVEL PACK",
+          "MUZIC DOWN HOLE DATA",
+          "OSS IWOCS",
+          "SS LANDING STRING",
+          "TUBING CONVEYED PERFORATIONS",
+          "WELL TESTING",
+          "CEMENTING/TESTING",
+          "FLUID SERVICES",
+          "DNM SERVICES",
+          "FISHING SERVICES",
+          "H2S SAFETY SERVICES",
+          "SOLID CONTROL",
+          "TUBULAR RUNNING SERVICE",
+          "WELLBORE CLEANOUT",
+          "DOWNHOLE VISUAL ANALYTICS"
+        ],
+        "value": "ROV SERVICES"
+      },
+      {
+        "label": "Rig Name",
+        "type": "dropdown",
+        "required": true,
+        "dropdownList": ["FATIH", "KANUNI", "YAVUZ"],
+        "value": "FATIH"
+      },
+      {
+        "label": "Issue Date",
+        "type": "date",
+        "required": true,
+        "dropdownList": [],
+        "value": "2023-03-22T21:00:00.000Z"
+      }
+    ],
+    "categories": [
+      {
+        "categoryId": "0",
+        "categoryName": "Health and Safety",
+        "questions": [
+          {
+            "questionId": "0",
+            "description": "Any fatality or severe injury within the period?",
+            "type": "critical",
+            "responseType": "boolean",
+            "consequenceIfFalse": "An incident of fatality or severe injury has been reported within the period, leading to an automatic evaluation failure.",
+            "response": false
+          },
+          {
+            "questionId": "1",
+            "description": "Any LTI within the period?",
+            "type": "critical",
+            "responseType": "boolean",
+            "consequenceIfFalse": "Lost Time Incident reported within the period",
+            "response": false
+          },
+          {
+            "questionId": "2",
+            "description": "Any TP-OTC rules violation within the period?",
+            "type": "critical",
+            "responseType": "boolean",
+            "consequenceIfFalse": "Violation of TP-OTC rules reported within the period",
+            "response": false
+          },
+          {
+            "questionId": "3",
+            "description": "Any major LOPC/fire within the period?",
+            "type": "critical",
+            "responseType": "boolean",
+            "consequenceIfFalse": "Incident of Loss of Primary Containment reported within the period",
+            "response": false
+          },
+          {
+            "questionId": "4",
+            "description": "Implementation of HSE Plan",
+            "weight": 6,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 0,
+                "meaning": "Not met"
+              },
+              {
+                "rating": 1,
+                "meaning": "Partially met w/impact"
+              },
+              {
+                "rating": 2,
+                "meaning": "Partially met w/o impact"
+              },
+              {
+                "rating": 3,
+                "meaning": "Fully met"
+              }
+            ],
+            "response": "Partially met w/o impact"
+          },
+          {
+            "questionId": "5",
+            "description": "Participation of observation card (stopcard) system",
+            "weight": 6,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 0,
+                "meaning": "0 card/person"
+              },
+              {
+                "rating": 1,
+                "meaning": "< 0.25 card/person"
+              },
+              {
+                "rating": 2,
+                "meaning": "0.25-0.75 card/person"
+              },
+              {
+                "rating": 3,
+                "meaning": ">0.75 card/person"
+              }
+            ],
+            "response": "0.25-0.75 card/person"
+          },
+          {
+            "questionId": "6",
+            "description": "Response to close stop card/incident report items",
+            "weight": 5,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 0,
+                "meaning": "Not met"
+              },
+              {
+                "rating": 2,
+                "meaning": "Partially met w/o impact"
+              },
+              {
+                "rating": 3,
+                "meaning": "fully met"
+              }
+            ],
+            "response": "fully met"
+          },
+          {
+            "questionId": "7",
+            "description": "Prejob safety meetings",
+            "weight": 5,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 3,
+                "meaning": "Conducted"
+              }
+            ],
+            "response": "Conducted"
+          },
+          {
+            "questionId": "8",
+            "description": "Attending contractor weekly/monthly HSE meeting",
+            "weight": 5,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 0,
+                "meaning": " >1 crew member miss"
+              },
+              {
+                "rating": 0,
+                "meaning": ""
+              },
+              {
+                "rating": 2,
+                "meaning": " 1 crew member miss"
+              },
+              {
+                "rating": 3,
+                "meaning": "Full attandency"
+              }
+            ],
+            "response": " >1 crew member miss"
+          },
+          {
+            "questionId": "9",
+            "description": "Service Management site visit",
+            "weight": 3,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 0,
+                "meaning": ""
+              },
+              {
+                "rating": 0,
+                "meaning": ""
+              },
+              {
+                "rating": 0,
+                "meaning": ""
+              },
+              {
+                "rating": 3,
+                "meaning": "Visit within 12 months"
+              }
+            ],
+            "response": "Visit within 12 months"
+          }
+        ]
+      },
+      {
+        "categoryId": "1",
+        "categoryName": "Timeliness",
+        "questions": [
+          {
+            "questionId": "0",
+            "description": "Equipment rig up/rig down time",
+            "weight": 5,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 0,
+                "meaning": " Not met "
+              },
+              {
+                "rating": 1,
+                "meaning": " Partially met w/impact "
+              },
+              {
+                "rating": 2,
+                "meaning": " Partially met w/o impact "
+              },
+              {
+                "rating": 3,
+                "meaning": "Fully met"
+              }
+            ],
+            "response": "Fully met"
+          },
+          {
+            "questionId": "1",
+            "description": "Recorded Downtime/NPT",
+            "weight": 6,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 0,
+                "meaning": " More than 6 hrs "
+              },
+              {
+                "rating": 1,
+                "meaning": " 3 to 6 hrs NPT "
+              },
+              {
+                "rating": 2,
+                "meaning": " 1 to 3 hrs NPT "
+              },
+              {
+                "rating": 3,
+                "meaning": "Less than 1 hr"
+              }
+            ],
+            "response": "Less than 1 hr"
+          },
+          {
+            "questionId": "2",
+            "description": "Completed job within the work schedule",
+            "weight": 6,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 0,
+                "meaning": " Not met "
+              },
+              {
+                "rating": 1,
+                "meaning": " Partially met w/impact "
+              },
+              {
+                "rating": 2,
+                "meaning": " Partially met w/o impact "
+              },
+              {
+                "rating": 3,
+                "meaning": "Fully met"
+              }
+            ],
+            "response": " Partially met w/o impact "
+          },
+          {
+            "questionId": "3",
+            "description": "Submitted initial and final NCRs on time",
+            "weight": 7,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 0,
+                "meaning": " Not Submitted "
+              },
+              {
+                "rating": 1,
+                "meaning": " Partially met w/impact "
+              },
+              {
+                "rating": 0,
+                "meaning": ""
+              },
+              {
+                "rating": 3,
+                "meaning": "Submitted"
+              }
+            ],
+            "response": "Submitted"
+          },
+          {
+            "questionId": "4",
+            "description": "Submitted daily report/final report/job report",
+            "weight": 6,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 0,
+                "meaning": " Not Submitted "
+              },
+              {
+                "rating": 1,
+                "meaning": " Partially met w/impact "
+              },
+              {
+                "rating": 0,
+                "meaning": ""
+              },
+              {
+                "rating": 3,
+                "meaning": "Submitted"
+              }
+            ],
+            "response": "Submitted"
+          }
+        ]
+      },
+      {
+        "categoryId": "2",
+        "categoryName": "Quality",
+        "questions": [
+          {
+            "questionId": "0",
+            "description": "Equipment rig up/rig down time",
+            "weight": 5,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 0,
+                "meaning": " None of them "
+              },
+              {
+                "rating": 1,
+                "meaning": " Not consistent "
+              },
+              {
+                "rating": 2,
+                "meaning": " Key personnel "
+              },
+              {
+                "rating": 3,
+                "meaning": "All personnel"
+              }
+            ],
+            "response": " Key personnel "
+          },
+          {
+            "questionId": "1",
+            "description": "Personnel communication and attitude",
+            "weight": 5,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 0,
+                "meaning": " Not met "
+              },
+              {
+                "rating": 0,
+                "meaning": ""
+              },
+              {
+                "rating": 2,
+                "meaning": " Partially met w/o impact "
+              },
+              {
+                "rating": 3,
+                "meaning": "Fully met"
+              }
+            ],
+            "response": "Fully met"
+          },
+          {
+            "questionId": "2",
+            "description": "Local personnel content onboard for the task",
+            "weight": 4,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 0,
+                "meaning": "Local less than 30%"
+              },
+              {
+                "rating": 0,
+                "meaning": ""
+              },
+              {
+                "rating": 2,
+                "meaning": " Partially met "
+              },
+              {
+                "rating": 3,
+                "meaning": "Local more than 50%"
+              }
+            ],
+            "response": "Local more than 50%"
+          },
+          {
+            "questionId": "3",
+            "description": "Participation to resolve operational issues if any",
+            "weight": 4,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 0,
+                "meaning": "Absent"
+              },
+              {
+                "rating": 1,
+                "meaning": " No solution offered "
+              },
+              {
+                "rating": 2,
+                "meaning": " Partially resolved "
+              },
+              {
+                "rating": 3,
+                "meaning": "All issues resolved"
+              }
+            ],
+            "response": " Partially resolved "
+          },
+          {
+            "questionId": "4",
+            "description": "Job design/instructions followed & executed ",
+            "weight": 4,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 0,
+                "meaning": " Not met "
+              },
+              {
+                "rating": 1,
+                "meaning": " Partially met w/impact "
+              },
+              {
+                "rating": 2,
+                "meaning": " Partially met w/o impact "
+              },
+              {
+                "rating": 3,
+                "meaning": "Fully met"
+              }
+            ],
+            "response": " Partially met w/o impact "
+          },
+          {
+            "questionId": "5",
+            "description": " Attendance to pre-tour meetings ",
+            "weight": 4,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 0,
+                "meaning": " Absent w/o justification "
+              },
+              {
+                "rating": 1,
+                "meaning": " Absent w/justification "
+              },
+              {
+                "rating": 0,
+                "meaning": ""
+              },
+              {
+                "rating": 3,
+                "meaning": "Full attandency"
+              }
+            ],
+            "response": "Full attandency"
+          },
+          {
+            "questionId": "6",
+            "description": " Equipment availability as per ROS date ",
+            "weight": 4,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 0,
+                "meaning": " 0% Plan "
+              },
+              {
+                "rating": 1,
+                "meaning": " >50% Plan "
+              },
+              {
+                "rating": 2,
+                "meaning": ">75% Plan"
+              },
+              {
+                "rating": 3,
+                "meaning": "100% Plan"
+              }
+            ],
+            "response": ">75% Plan"
+          },
+          {
+            "questionId": "7",
+            "description": " Equipment Inspection and QAQC ",
+            "weight": 5,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 0,
+                "meaning": " less than 75% Inventory "
+              },
+              {
+                "rating": 1,
+                "meaning": " >75% Inventory "
+              },
+              {
+                "rating": 0,
+                "meaning": ""
+              },
+              {
+                "rating": 3,
+                "meaning": "100% Inventory"
+              }
+            ],
+            "response": "100% Inventory"
+          },
+          {
+            "questionId": "8",
+            "description": " Equipment performed as per expectations ",
+            "weight": 5,
+            "type": "standard",
+            "responseType": "string",
+            "scale": [
+              {
+                "rating": 0,
+                "meaning": "Not applicable"
+              },
+              {
+                "rating": 0,
+                "meaning": " <50% "
+              },
+              {
+                "rating": 1,
+                "meaning": " 50-90% "
+              },
+              {
+                "rating": 0,
+                "meaning": ""
+              },
+              {
+                "rating": 3,
+                "meaning": "90-100%"
+              }
+            ],
+            "response": "90-100%"
+          }
+        ]
+      }
+    ],
+    "abbreviations": [
+      {
+        "name": " Health, Safety and Environment ",
+        "description": "HSE"
+      },
+      {
+        "name": "Loss of Primary Containment",
+        "description": "LOPC"
+      },
+      {
+        "name": "Required On-Site",
+        "description": "ROS"
+      },
+      {
+        "name": "Quality Assurance Quality Control",
+        "description": "QAQC"
+      },
+      {
+        "name": "Non Productive Time",
+        "description": "NPT"
+      },
+      {
+        "name": "Non Conformance Report",
+        "description": "NCR"
+      },
+      {
+        "name": "Loss Time Incident",
+        "description": "LTI"
+      }
+    ],
+    "__v": 0
+  }
+]

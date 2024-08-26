@@ -1,0 +1,4 @@
+TODO: 
+- Dropdown lists are wrong. 
+- Values from old records are different than Ax.ODS.SPE dropdowns. 
+- Karadeniziz Zsi farklıydı, onu düzelttik.
